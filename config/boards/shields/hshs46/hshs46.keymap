@@ -27,7 +27,6 @@
 / {
         keymap {
                 compatible = "zmk,keymap";
-
                 default_layer {
 /* QWERTY
  * -------------------------------------------------------------------------------------------------------------------------------------
@@ -43,6 +42,7 @@
                                                         &kp  LGUI     &kp  LALT     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &kp  LALT     &kp  RGUI
                         >;
 
+                        display-name = "Base";
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
@@ -61,6 +61,7 @@
                                                         &kp  LGUI     &kp  LALT     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &kp  LALT     &kp  RGUI
                         >;
 
+                        display-name = "Dvorak";
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
@@ -79,6 +80,7 @@
                                                         &kp  LGUI     &kp  LALT     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &kp  LALT     &kp  RGUI
                         >;
 
+                        display-name = "Colemak";
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
@@ -97,6 +99,7 @@
                                                         &trans        &trans        &trans        &trans                 &mo ADJ_L     &trans        &trans        &trans
                         >;
 
+                        display-name = "Nav";
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
@@ -115,6 +118,7 @@
                                                         &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
                         >;
 
+                        display-name = "Sym";
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
@@ -133,6 +137,7 @@
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans
                         >;
 
+                        display-name = "Adj";
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
         };
